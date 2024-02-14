@@ -1,0 +1,164 @@
+body {
+    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 255, 255, 0.5), rgba(0, 0, 255, 0.5));
+}
+
+.car-right,
+.car-left {
+    width: 15vw;
+    position: absolute;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.car-right {
+    right: 0;
+    animation-name: car-right;
+}
+
+.car-left {
+    left: 0;
+    animation-name: car-left;
+}
+
+.right-01 {
+    top: 0vh;
+    animation-delay: 3s;
+}
+
+.left-01 {
+    top: 10vh;
+    animation-delay: 6s;
+}
+
+.right-02 {
+    top: 20vh;
+    animation-delay: 9s;
+}
+
+.left-02 {
+    top: 30vh;
+    animation-delay: 12s;
+}
+
+.right-03 {
+    top: 40vh;
+    animation-delay: 15s;
+}
+
+.left-03 {
+    top: 50vh;
+    animation-delay: 18s;
+}
+
+.right-04 {
+    top: 60vh;
+    animation-delay: 21s;
+}
+
+.left-04 {
+    top: 70vh;
+    animation-delay: 24s;
+}
+
+@keyframes car-right {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 85vw;
+    }
+}
+
+@keyframes car-left {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 85vw;
+    }
+}
+
+.Loading {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -53px;
+    margin-top: -53px;
+    border-left-color: transparent;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.count1,
+.count2,
+.count3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -47px;
+    margin-top: -47px;
+    background-color: rgba(255, 255, 255, 1);
+
+    font-size: 80px;
+    text-align: center;
+    opacity: 0;
+
+    animation-name: count;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.count3 {
+    animation-delay: 0;
+}
+
+.count2 {
+    animation-delay: 1s;
+}
+
+.count1 {
+    animation-delay: 2s;
+}
+
+@keyframes count {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
